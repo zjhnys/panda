@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务三：三栏式布局</title>
+	<style type="text/css">
+	body{margin:0;padding: 0;font:12px "Microsoft Yahei";}
+	#wrap,#team,#logo,#info,#member,#pic{border: 1px solid #999;}
+	#wrap,#team,#info,#member{padding: 20px;}
+	#wrap{
+		margin: 20px;
+		background: #eee;
+		position: relative;
+	}
+
+	#team{
+		width: 200px;
+		height: 80px;
+		position: absolute 20px 20px;
+		background: white;
+	}
+	#team h2,#team #logo{
+		float: left;
+	}
+	#team h2{position: absolute;top:20px;left: 154px;}
+	#info{
+		margin-left:260px;
+
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="team">
+			<img src="img/logo80.jpg" id="logo">
+			<h2>功夫熊猫</h2>
+		</div>
+		<div id="info">功夫熊猫团队是响应参加百度前端学院2016年春季班的一个自成立团队，皆致力于自学前端开发相关开发技术，相互学习，共同进步。功夫熊猫团队是响应参加百度前端学院2016年春季班的一个自成立团队，皆致力于自学前端开发相关开发技术，相互学习，共同进步。功夫熊猫团队是响应参加百度前端学院2016年春季班的一个自成立团队，皆致力于自学前端开发相关开发技术，相互学习，共同进步。</div>
+		<div id="member"></div>
+	</div>
+</body>
+</html>
