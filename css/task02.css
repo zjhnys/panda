@@ -1,9 +1,11 @@
-body {
-    background: #ccc;
-    ;
-    font-family: "Microsoft YaHei";
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: #ccc;
+    font-family: "Microsoft YaHei";
 }
 
 
@@ -26,7 +28,7 @@ body {
 }
 
 #header {
-    background: #333 url(img/logo.png) no-repeat 20px;
+    background: #333 url(../img/logo.png) no-repeat 20px;
 }
 
 #header h1 {
@@ -49,18 +51,14 @@ body {
     text-decoration: none;
 }
 
-#left {
-    margin-right: 470px;
-}
-
-.content {
+article,
+#side {
     width: 96%;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #999;
     background: white;
     box-shadow: #2B0F0F 2px 2px 1px;
-    overflow: hidden;
 }
 
 
@@ -73,7 +71,6 @@ body {
     padding: 10px;
     text-align: center;
     border: 1px solid silver;
-    float: left;
 }
 
 .eat>img {
@@ -81,14 +78,14 @@ body {
     height: 130px;
 }
 
-.content ul li {
+article ul li {
     list-style: none;
 }
 
 
 /*table样式*/
 
-.content table {
+article table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
@@ -107,18 +104,6 @@ tbody td {
 tfoot {
     background: #ccc;
     font-weight: bolder;
-}
-
-#side {
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #999;
-    background: white;
-    box-shadow: #2B0F0F 2px 2px 1px;
 }
 
 #side>h2 {
