@@ -1,0 +1,64 @@
+#gopng_circle_outer {
+height: 42px;
+width: 42px;
+overflow: hidden;
+}
+#gopng_circle {
+background: url(http://gopng/static/images/sprite.png) -0px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 0px;
+_margin-left: -0px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_flag_outer {
+height: 40px;
+width: 35px;
+overflow: hidden;
+}
+#gopng_flag {
+background: url(http://gopng/static/images/sprite.png) -42px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 42px;
+_margin-left: -42px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_flower_outer {
+height: 40px;
+width: 35px;
+overflow: hidden;
+}
+#gopng_flower {
+background: url(http://gopng/static/images/sprite.png) -77px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 77px;
+_margin-left: -77px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_4square_outer {
+height: 40px;
+width: 41px;
+overflow: hidden;
+}
+#gopng_4square {
+background: url(http://gopng/static/images/sprite.png) -112px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 112px;
+_margin-left: -112px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
