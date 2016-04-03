@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>任务十二：学习CSS 3的新特性</title>
+    <style type="text/css">
+    /*斑马线+排行榜表格*/
+    
+    div,
+    ul,
+    li,
+    a {
+        margin: 0;
+        padding: 0;
+    }
+    
+    table {
+        text-align: left;
+        font: 16px "Microsoft Yahei";
+    }
+    
+    thead {
+        background: #000;
+        color: #fff;
+    }
+    
+    tbody>tr:nth-child(even) {
+        background: #ccc;
+    }
+    
+    tbody>tr:nth-child(-n+3) {
+        color: red;
+    }
+    /*动画输入框*/
+    
+    #text {
+        width: 80px;
+        margin: 60px;
+        -webkit-transition-property: width;
+        transition-property: width;
+        -webkit-transition-timing-function: ease-out;
+        -webkit-transition-duration: .5s;
+        transition-duration: .5s;
+    }
+    
+    #text:focus {
+        width: 160px;
+    }
+
+
+    /*Banner图轮流播放效果*/
+    .banner {
+        position: relative;
+        width: 300px;
+        height: 120px;
+    }
+    
+    #banner1,
+    #banner2,
+    #banner3 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    #banner1 {
+        background: green;
+        display: block;
+    }
+    
+    #banner2 {
+        background: green;
+        display: none;
+    }
+    
+    #banner2 div {
+        width: 50%;
+        height: 100%;
+        background: blue;
+    }
+    
+    #banner3 {
+        background: blue;
+        display: none;
+    }
+    
+    ul {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        list-style: none;
+    }
+    
+    li {
+        float: left;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        margin-left: 2px;
+        background: rgba(255, 255, 255, 0.4);
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    #banner1:target,
+    #banner2:target,
+    #banner3:target {
+        display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th>排名</th>
+            <th>网站</th>
+            <th>热度</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>百度前端技术学院</td>
+                <td>13000</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>百度前端技术学院</td>
+                <td>12000</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>百度前端技术学院</td>
+                <td>11000</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>百度前端技术学院</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>百度前端技术学院</td>
+                <td>9000</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>百度前端技术学院</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>百度前端技术学院</td>
+                <td>7000</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>百度前端技术学院</td>
+                <td>6000</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>百度前端技术学院</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>百度前端技术学院</td>
+                <td>4000</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="input">
+        <input type="text" name="text" id="text" />
+    </div>
+    <div class="banner">
+        <div id="banner1"></div>
+        <div id="banner2">
+            <div></div>
+        </div>
+        <div id="banner3"></div>
+        <ul>
+            <li><a href="#banner1">1</a></li>
+            <li><a href="#banner2">2</a></li>
+            <li><a href="#banner3">3</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
