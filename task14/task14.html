@@ -38,10 +38,7 @@
         }//比较数组中的空气质量值
 
         aqiData.sort(compare);//将污染城市列表按照空气质量指数的降序排序
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
         aqiList.innerHTML="";
         for (i = 1; i <= n && aqiData[i-1][1]>60; i++) {
           var aqiLi = document.createElement("li");
