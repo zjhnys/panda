@@ -39,13 +39,14 @@
 
         aqiData.sort(compare);//将污染城市列表按照空气质量指数的降序排序
 
-        aqiList.innerHTML="";
-        for (i = 1; i <= n && aqiData[i-1][1]>60; i++) {
-          var aqiLi = document.createElement("li");
-          aqiLi.innerHTML = "第" + i + "名：" + aqiData[i - 1] ;
-          aqiList.appendChild(aqiLi);
+        var temp="";
+        for (i = 0; i <= n && aqiData[i][1]>60; i++) {
+            temp+= "<li>第" + (i+1) + "名：" + aqiData[i]+ "</li>";
+          // var aqiLi = document.createElement("li");
+          // aqiLi.innerHTML = "第" + i + "名：" + aqiData[i - 1] ;
+          // aqiList.appendChild(aqiLi);
         }//生成空气质量大于60的污染城市列表
-
+        aqiList.innerHTML = temp;
     })();
     </script>
 </body>
