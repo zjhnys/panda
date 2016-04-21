@@ -39,7 +39,7 @@
         for (i = 0; i < oLi.length; i++) {
             var text=oLi[i].textContent;
             var city = text.split('空气质量：',1);
-            var num = paserInt(text.split('空气质量：')[1]);
+            var num = parseInt(text.split('空气质量：')[1]);
             data.push([city,num]);
         }
         return data;
